@@ -6,10 +6,11 @@
   <title>HariSmrutiLabs</title>
   <style>
     :root {
-      --fb-blue: #1877f2;
+      --dark-lemon-green: #a3c400;
       --lemon-green: #cddc39;
-      --text-dark: #1c1c1c;
-      --background: #f0f2f5;
+      --text-light: #e0e0e0;
+      --background-dark: #0f0f1a;
+      --card-dark: #1e1e2f;
     }
 
     * {
@@ -21,8 +22,8 @@
     html, body {
       height: 100%;
       font-family: 'Segoe UI', sans-serif;
-      background-color: var(--background);
-      color: var(--text-dark);
+      background-color: var(--background-dark);
+      color: var(--text-light);
     }
 
     body {
@@ -32,15 +33,15 @@
     }
 
     header {
-      background: linear-gradient(135deg, var(--fb-blue), var(--lemon-green));
-      padding: 30px 20px;
+      background: linear-gradient(135deg, var(--dark-lemon-green), var(--lemon-green));
+      padding: 40px 20px;
       text-align: center;
       color: white;
     }
 
     header img {
       height: 80px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       background-color: white;
       border-radius: 12px;
       padding: 10px;
@@ -48,7 +49,7 @@
 
     h1 {
       font-size: 2.5em;
-      margin: 0.2em 0;
+      margin: 0.3em 0;
     }
 
     p.lead {
@@ -58,16 +59,16 @@
     }
 
     .apps-section {
-      padding: 40px 20px;
-      background-color: white;
+      padding: 50px 20px;
+      background-color: var(--card-dark);
       text-align: center;
       flex: 1;
     }
 
     .apps-section h2 {
-      font-size: 2em;
-      color: var(--fb-blue);
-      margin-bottom: 30px;
+      font-size: 2.2em;
+      color: var(--lemon-green);
+      margin-bottom: 40px;
     }
 
     .app-list {
@@ -78,29 +79,34 @@
     }
 
     .app-card {
-      background-color: var(--lemon-green);
+      background: linear-gradient(135deg, var(--lemon-green), var(--dark-lemon-green));
       color: #000;
-      border-radius: 12px;
-      width: 250px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      width: 260px;
+      padding: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
       transition: transform 0.3s ease;
       text-decoration: none;
       display: block;
     }
 
     .app-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
     }
 
     .app-title {
-      font-size: 1.3em;
+      font-size: 1.4em;
       font-weight: bold;
       margin-bottom: 10px;
     }
 
+    .app-card p {
+      font-size: 0.95em;
+      color: #222;
+    }
+
     footer {
-      background-color: var(--fb-blue);
+      background-color: var(--dark-lemon-green);
       color: white;
       text-align: center;
       padding: 15px 0;
