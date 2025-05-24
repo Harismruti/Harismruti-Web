@@ -23,8 +23,12 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: var(--background);
       color: var(--text-dark);
+    }
+
+    body {
       display: flex;
       flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
@@ -79,6 +83,7 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
       text-decoration: none;
+      display: block;
     }
 
     .app-card:hover {
@@ -116,15 +121,15 @@
   <section class="apps-section">
     <h2>Our Apps</h2>
     <div class="app-list">
-      <a class="app-card" href="#" target="_blank">
+      <a class="app-card" href="https://play.google.com/store/apps/details?id=com.example.invidig" target="_blank">
         <div class="app-title">Invid-IG</div>
         <p>Download and manage Instagram videos easily.</p>
       </a>
-      <a class="app-card" href="#" target="_blank">
+      <a class="app-card" href="https://play.google.com/store/apps/details?id=com.example.invidfb" target="_blank">
         <div class="app-title">Invid-FB</div>
         <p>Private & public Facebook video downloading simplified.</p>
       </a>
-      <a class="app-card" href="#" target="_blank">
+      <a class="app-card" href="https://play.google.com/store/apps/details?id=com.example.invidpintarest" target="_blank">
         <div class="app-title">Invid-Pintarest</div>
         <p>Save and explore Pinterest video content with ease.</p>
       </a>
